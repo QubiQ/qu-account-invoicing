@@ -40,7 +40,7 @@ msgid ""
 "                    <p style=\"color:#888888\">${object.company_id.name}</p>\n"
 "                </div>\n"
 "            "
-msgstr "<div>                    <p>Querido/a ${object.partner_id.name},</p>                    <p>\t\t\tAquí tiene, en el adjunto, su mandato ${object.unique_mandate_reference}.<br/>\t\t\tPor favor retorne el archivo adjunto correctamente completo y firmado.                    </p>                    <p>Muchas gracias,</p>                    <p style=\"color:#888888\">${object.company_id.name}</p>                </div>"
+msgstr "<div>                    <p>Querido/a ${object.partner_id.name},</p>                    <p>Aquí tiene, en el adjunto, su mandato ${object.unique_mandate_reference}.<br/>Por favor retorne el archivo adjunto correctamente completo y firmado.                    </p>                    <p>Muchas gracias,</p>                    <p style=\"color:#888888\">${object.company_id.name}</p>                </div>"
 
 #. module: banking_mandate_by_email
 #: model:ir.model,name:banking_mandate_by_email.model_account_banking_mandate
