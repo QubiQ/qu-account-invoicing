@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sorted_report_invoice_document" inherit_id="account.report_invoice_document">
+        <xpath expr="//tr[@t-foreach='o.invoice_line_ids']" position="attributes">
+            <attribute name="t-foreach">o.invoice_line_ids.sorted(key=lambda b: b.origin)</attribute>
+        </xpath>
+    </template>
+</odoo>
