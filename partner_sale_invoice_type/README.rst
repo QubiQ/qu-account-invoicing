@@ -19,8 +19,7 @@ Usage
 =====
 
 #. Assign an "Invoice Type" to each customer and supplier (Mail will be set by default).
-#. Create an invoice or a credit note, the "Invoice Type" field will be filled by default with the partner
-default "Invoice Type".
+#. Create an invoice or a credit note, the "Invoice Type" field will be filled by default with the partner default "Invoice Type".
 #. Change the "Invoice Type" if required, it won't change the partner's one.
 
 
