@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2018 Qubiq <info@qubiq.es>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)
+-->
+<odoo>
+    <record id="wizard_invoice_date_warning" model="ir.ui.view">
+        <field name="name">Invoice Date Warning</field>
+        <field name="model">account.invoice</field>
+        <field name="arch" type="xml">
+            <form string="Invoice Date Warning">
+                <div>
+                    <h2>Warning</h2>
+                    <p>The invoice date is previous than other validated invoices!</p>
+                </div>
+                <footer>
+                    <button name="action_invoice_open" type="object" string="Validate" class="oe_highlight"/>
+                    <button special="cancel" string="Cancel" type="object" class="btn-default"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_wizard_invoice_date_warning" model="ir.actions.act_window">
+        <field name="name">Invoice Date Warninge Action</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.invoice</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

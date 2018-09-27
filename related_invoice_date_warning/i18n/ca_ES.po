@@ -1,0 +1,54 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* related_invoice_date_warning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20180303\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-26 10:27+0000\n"
+"PO-Revision-Date: 2018-09-26 12:29+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ca_ES\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: related_invoice_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.wizard_invoice_date_warning
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: related_invoice_date_warning
+#: model:ir.model,name:related_invoice_date_warning.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: related_invoice_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.wizard_invoice_date_warning
+msgid "Invoice Date Warning"
+msgstr "Advertència de data de factura"
+
+#. module: related_invoice_date_warning
+#: model:ir.actions.act_window,name:related_invoice_date_warning.action_wizard_invoice_date_warning
+msgid "Invoice Date Warninge Action"
+msgstr "Acció d'advertència de data de factura"
+
+#. module: related_invoice_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.wizard_invoice_date_warning
+msgid "The invoice date is previous than other validated invoices!"
+msgstr "La data de la factura és anterior a la resta de factures validades!"
+
+#. module: related_invoice_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.account_invoice_form_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.wizard_invoice_date_warning
+msgid "Validate"
+msgstr "Validar"
+
+#. module: related_invoice_date_warning
+#: model:ir.ui.view,arch_db:related_invoice_date_warning.wizard_invoice_date_warning
+msgid "Warning"
+msgstr "Advertència"
