@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "QubiQ Account Invoice Margin",
+    "name": "Account Invoice Margin",
     "summary": "Module summary",
     "version": "11.0.1.0.0",
     "category": "Account",
@@ -17,8 +17,6 @@
         "account",
     ],
     "data": [
-
         "views/account_invoice.xml",
-
     ],
 }
