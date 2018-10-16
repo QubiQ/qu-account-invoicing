@@ -12,5 +12,6 @@ addon | version | summary
 [partner_sale_invoice_type](partner_sale_invoice_type/) | 11.0.1.0.0 | Adds sale invoice types for client partners
 [account_invoice_margin](account_invoice_margin/) | 11.0.1.0.0 | Cost and margin in invoices
 [related_invoice_date_warning](related_invoice_date_warning/) | 11.0.1.0.0 | Adds a date check when validating an outgoing invoice
+[indirect_cost_invoices](indirect_cost_invoices/) | 11.0.1.0.0 | Calculates the Indirect Cost for Sale Invoice Lines given Purchase Order Invoice
 
 [//]: # (end addons)

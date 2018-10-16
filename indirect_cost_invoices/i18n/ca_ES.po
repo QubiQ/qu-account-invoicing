@@ -1,0 +1,376 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* indirect_cost_invoices
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-16 07:47+0000\n"
+"PO-Revision-Date: 2018-10-16 09:48+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ca_ES\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:69
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_unit_cost
+#, python-format
+msgid "Average cost for each product unit in Sale Order Lines."
+msgstr "Cost mitjà de cada unitat de producte a les línies d'ordres de venda."
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:32
+#: selection:indirect.cost.invoices,state:0
+#, python-format
+msgid "Cancelled"
+msgstr "Cancel·lat"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:96
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_category_ids
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+#, python-format
+msgid "Categories"
+msgstr "Categories"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_company_id
+msgid "Company"
+msgstr "Companyia"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_company_currency_id
+msgid "Company Currency"
+msgstr "Moneda de l'empresa"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Costumers"
+msgstr "Clients"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:120
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_date_from
+#, python-format
+msgid "Date from"
+msgstr "Data desde"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Date period"
+msgstr "Periode Data"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:125
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_date_to
+#, python-format
+msgid "Date to"
+msgstr "Data fins"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:25
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_description
+#, python-format
+msgid "Description"
+msgstr "Descripció"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:27
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_description
+#, python-format
+msgid "Detailed description and notes."
+msgstr "Descripció detallada i notes."
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_display_name
+msgid "Display Name"
+msgstr "Mostrar Nom"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:31
+#: selection:indirect.cost.invoices,state:0
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+#, python-format
+msgid "Done"
+msgstr "Fet"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:30
+#: selection:indirect.cost.invoices,state:0
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+#, python-format
+msgid "Draft"
+msgstr "Esborrany"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/account_invoice_line.py:11
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_account_invoice_line_extra_cost
+#, python-format
+msgid "Extra cost"
+msgstr "Cost Extra"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+msgid "Group By"
+msgstr "Agrupar per"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_id
+msgid "ID"
+msgstr "ID"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Indirect Cost Invoice"
+msgstr "Factura de cost indirecte"
+
+#. module: indirect_cost_invoices
+#: model:ir.actions.act_window,name:indirect_cost_invoices.action_indirect_cost_invoices_tree
+#: model:ir.ui.menu,name:indirect_cost_invoices.menu_indirect_cost_invoices_tree
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_tree
+msgid "Indirect Cost Invoices"
+msgstr "Factures de cost indirecte"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/account_invoice.py:12
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_account_invoice_indirect_cost_invoice_id
+#, python-format
+msgid "Indirect cost invoice"
+msgstr "Factura de cost indirecte"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/account_invoice_line.py:19
+#: model:ir.model,name:indirect_cost_invoices.model_indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_account_invoice_line_indirect_cost_line_ids
+#, python-format
+msgid "Indirect cost invoices"
+msgstr "Factures de cost indirecte"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:22
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_note
+#, python-format
+msgid "Informative note."
+msgstr "Informative note."
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Internal Notes"
+msgstr "Notes internes"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:73
+#: model:ir.model,name:indirect_cost_invoices.model_account_invoice
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_invoice_id
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_tree
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+#, python-format
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: indirect_cost_invoices
+#: model:ir.model,name:indirect_cost_invoices.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Línia de factura"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:103
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_invoice_line_ids
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+#, python-format
+msgid "Invoice Lines"
+msgstr "Línies de factura"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices___last_update
+msgid "Last Modified on"
+msgstr "Última modificació el "
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: indirect_cost_invoices
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:14
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_name
+#, python-format
+msgid "Name"
+msgstr "Nom"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:17
+#, python-format
+msgid "New"
+msgstr "Nou"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:20
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_note
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+#, python-format
+msgid "Note"
+msgstr "Nota"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:83
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_partner_ids
+#, python-format
+msgid "Partners"
+msgstr "Empreses"
+
+#. module: indirect_cost_invoices
+#: selection:indirect.cost.invoices,type_search:0
+msgid "Product"
+msgstr "Producte"
+
+#. module: indirect_cost_invoices
+#: selection:indirect.cost.invoices,type_search:0
+msgid "Product category"
+msgstr "Categoría Producte"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:90
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_product_ids
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+#, python-format
+msgid "Products"
+msgstr "Productes"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:63
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_amount_untaxed
+#, python-format
+msgid "Purchase Invoice amount without taxes."
+msgstr "Import de la factura de compra sense impostos."
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:79
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_invoice_id
+#, python-format
+msgid "Purchase Invoice to use."
+msgstr "Factura de compra a utilitzar."
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "Reset to Draft"
+msgstr "Inicialitza a esborrany"
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+msgid "Search Indirect Cost Invoice"
+msgstr "Buscar Factura de cost indirecte"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:115
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_type_search
+#, python-format
+msgid ""
+"Select if you want to filter invoice lines by:\n"
+" - Products. \n"
+" - Product Categories (only products in that category line)."
+msgstr ""
+"Seleccioneu si voleu filtrar les línies de facturació mitjançant:\n"
+"  - Productes.\n"
+"  - Categories de productes (només productes en aquesta línia de categoria)."
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.view_indirect_cost_invoice_filter
+msgid "State"
+msgstr "Estat"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:33
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_state
+#, python-format
+msgid "Status"
+msgstr "Estat"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:194
+#, python-format
+msgid "The total quantity for the invoice lines is 0!"
+msgstr "La quantitat total de les línies de facturació és 0!"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:160
+#, python-format
+msgid "This procedure has already been made for this purchase invoice!"
+msgstr "Aquest procediment ja s'ha fet per a aquesta factura de compra!"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:111
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_type_search
+#, python-format
+msgid "Type search"
+msgstr "Escriu la cerca"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:66
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_unit_cost
+#, python-format
+msgid "Unit Cost"
+msgstr "Cost Unitari"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:60
+#: model:ir.model.fields,field_description:indirect_cost_invoices.field_indirect_cost_invoices_amount_untaxed
+#, python-format
+msgid "Untaxed Amount"
+msgstr "Base imposable"
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:38
+#: model:ir.model.fields,help:indirect_cost_invoices.field_indirect_cost_invoices_state
+#, python-format
+msgid ""
+"When an indirect cost invoice is created, the status is 'Draft'.\n"
+"If the status changes to 'Done', the unit cost is calculated and applied to the found invoice lines extra cost.\n"
+"If the status changes to 'Cancelled', the changes made to the invoice lines extra cost are undone."
+msgstr ""
+"Quan es crea una factura de cost indirecte, l'estat és \"Esborrany\".\n"
+"Si l'estat canvia a \"Fet\", el cost de la unitat es calcula i s'aplica al cost addiciona de les línies de factures trobades.\n"
+"Si l'estat canvia a \"Cancel·lat\", els canvis realitzats als costos addicionals de les línies de la factura es desfan."
+
+#. module: indirect_cost_invoices
+#: code:addons/indirect_cost_invoices/models/indirect_cost_invoices.py:209
+#, python-format
+msgid "You cannot delete an indirect cost invoice which is not in draft."
+msgstr "No podeu esborrar una factura de cost indirecte que no estigui en esborrany."
+
+#. module: indirect_cost_invoices
+#: model:ir.ui.view,arch_db:indirect_cost_invoices.indirect_cost_invoices_view_form
+msgid "to"
+msgstr "fins"
