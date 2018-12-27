@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 <oscar.navarro@qubiq.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data noupdate="0">
+        <record id="email_template_acc_not" model="mail.template">
+            <field name="name">Payment Reminder</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="email_from">${object.email}</field>
+            <field name="subject">Payment Reminder</field>
+            <field name="email_to">${object.email}</field>
+            <field name="lang">${object.lang}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+
+                <!DOCTYPE html>
+                <head>
+                </head>
+
+                <body style="font-family:verdana;">
+                <td valign="middle" align="right">
+                <img src="/logo.png?company=${ctx['company_id_ctx']}" style="padding: 0px; align: center; margin: 0px; height: auto; width: 80px;" alt="${ctx['company_id_ctx']}"/>
+                </td>
+
+                <h2><u>ACCOUNTING STATUS</u></h2>
+
+                <div>
+                To the attention of the accounting department and manager.
+                </div>
+                <div><br/>
+                We remind your upcoming payments for the invoices bellow:
+                </div><br/>
+                <table cellspacing="1" border="1" cellpadding="4">
+                    <tr border="1">++
+                        <th>Invoice</th>
+                        <th>Invoice Date</th>
+                        <th>Payment Due</th>
+                        <th>Payment Method</th>
+                        <th>Import</th>
+                        <th>Notes</th>
+                    </tr>
+                    % if object.get_account_data():
+                        % for account in object.get_account_data():
+                            <tr boder="0">
+                                <td>${account['invoice']}</td>
+                                <td>${account['invoice_date']}</td>
+                                <td>${account['date_maturity']}</td>
+                                <td>${account['effect_type']}</td>
+                                <td align="right">${account['debit']}</td>
+                                <td>${account['comment']}</td>
+                            </tr>
+                            % endfor
+                            % endif
+                </table>
+                <div><br/>
+                We thank you for considering the due dates of the invoices and make the transfer to our IBAN number that appears in the documents.
+                </div>
+            </body>]]>
+            </field>
+        </record>
+    </data>
+</odoo>

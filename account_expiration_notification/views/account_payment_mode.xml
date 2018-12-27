@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_payment_mode_form_expiration" model="ir.ui.view">
+        <field name="name">account.payment.mode.form.expiration</field>
+        <field name="model">account.payment.mode</field>
+        <field name="inherit_id" ref="account_payment_mode.account_payment_mode_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='active']" position="after">
+                    <field name="not_check"/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+    <record id="account_payment_mode_tree_expiration" model="ir.ui.view">
+        <field name="name">account.payment.mode.tree.expiration</field>
+        <field name="model">account.payment.mode</field>
+        <field name="inherit_id" ref="account_payment_mode.account_payment_mode_tree"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='company_id']" position="before">
+                    <field name="not_check"/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+</odoo>
