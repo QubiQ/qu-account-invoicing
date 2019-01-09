@@ -16,5 +16,6 @@ addon | version | summary
 [related_invoice_date_warning](related_invoice_date_warning/) | 11.0.1.0.0 | Adds a date check when validating an outgoing invoice
 [indirect_cost_invoices](indirect_cost_invoices/) | 11.0.1.0.0 | Calculates the Indirect Cost for Sale Invoice Lines given Purchase Order Invoice
 [invoice_sorted_origin](invoice_sorted_origin/) | 11.0.1.0.0 | Orders invoice lines by their origin
+[account_invoice_merge](account_invoice_merge/) | 11.0.1.0.0 | Merge invoices
 
 [//]: # (end addons)
