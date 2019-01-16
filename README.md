@@ -7,7 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-
 [account_invoice_margin](account_invoice_margin/) | 11.0.1.0.0 | Cost and margin in invoices
 [account_expiration_notification](account_expiration_notification/) | 11.0.1.0.0 | Reminder of payments by email if indicated in the payment method.
 [bank_accounts_report](bank_accounts_report/) | 11.0.1.0.0 | Display bank accounts on invoice and sale order reports
