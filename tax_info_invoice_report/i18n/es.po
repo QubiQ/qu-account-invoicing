@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tax_info_invoice_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-16 14:23+0000\n"
+"PO-Revision-Date: 2019-01-16 15:24+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: tax_info_invoice_report
+#: model:ir.model,name:tax_info_invoice_report.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:26
+#: model:ir.model.fields,field_description:tax_info_invoice_report.field_res_company__info_text
+#, python-format
+msgid "Information Text"
+msgstr "Texto informativo"
+
+#. module: tax_info_invoice_report
+#: model:ir.model,name:tax_info_invoice_report.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: tax_info_invoice_report
+#: model_terms:ir.ui.view,arch_db:tax_info_invoice_report.view_company_form
+msgid "Invoice Report"
+msgstr "Informe de factura"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:12
+#: selection:res.company,show_tax_info:0
+#, python-format
+msgid "No"
+msgstr "No"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:23
+#: model:ir.model.fields,help:tax_info_invoice_report.field_res_company__tax_ids
+#, python-format
+msgid "Select the taxes for which the text will be displayed"
+msgstr "Selecciona los impuestos para los cuales se mostrará el texto"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:15
+#: model:ir.model.fields,help:tax_info_invoice_report.field_res_company__show_tax_info
+#, python-format
+msgid "Select yes to show an information text about taxes on invoice reports"
+msgstr "Selecciona sí para mostrar un texto informativo sobre los impuestos en los informes de factura"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:14
+#: model:ir.model.fields,field_description:tax_info_invoice_report.field_res_company__show_tax_info
+#, python-format
+msgid "Show Tax Info"
+msgstr "Mostrar información de impuestos"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:22
+#: model:ir.model.fields,field_description:tax_info_invoice_report.field_res_company__tax_ids
+#, python-format
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:28
+#: model:ir.model.fields,help:tax_info_invoice_report.field_res_company__info_text
+#, python-format
+msgid "This text will appear at the end of the invoice report"
+msgstr "Este texto aparecerá al final del informe de factura"
+
+#. module: tax_info_invoice_report
+#: code:addons/tax_info_invoice_report/models/res_company.py:11
+#, python-format
+msgid "Yes"
+msgstr "Sí"
