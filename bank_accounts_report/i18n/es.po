@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bank_accounts_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 14:49+0000\n"
+"PO-Revision-Date: 2019-01-09 15:49+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: bank_accounts_report
+#: model:ir.ui.view,arch_db:bank_accounts_report.report_invoice_document
+#: model:ir.ui.view,arch_db:bank_accounts_report.report_saleorder_document
+msgid "<strong>Bank Account:</strong>"
+msgstr "<strong>Cuenta bancaria:</strong>"
+
+#. module: bank_accounts_report
+#: model:ir.ui.view,arch_db:bank_accounts_report.report_invoice_document
+#: model:ir.ui.view,arch_db:bank_accounts_report.report_saleorder_document
+msgid ""
+"<strong>Bank Accounts:</strong>\n"
+"                    <br/>"
+msgstr ""
+"<strong>Cuentas bancarias:</strong>\n"
+"                    <br/>"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/res_partner_bank.py:12
+#: model:ir.model.fields,field_description:bank_accounts_report.field_account_multicompany_bank_wiz_account_payment_mode_id
+#: model:ir.model.fields,field_description:bank_accounts_report.field_res_partner_bank_account_payment_mode_id
+#, python-format
+msgid "Account Payment Mode"
+msgstr "Modo de pago"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:15
+#: model:ir.model.fields,field_description:bank_accounts_report.field_account_payment_mode_account_source
+#, python-format
+msgid "Account Source"
+msgstr "Origen cuenta"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:29
+#: model:ir.model.fields,field_description:bank_accounts_report.field_account_payment_mode_apply_sale_order
+#, python-format
+msgid "Apply to Sale Orders"
+msgstr "Aplicar a pedidos de venta"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:25
+#: model:ir.model,name:bank_accounts_report.model_res_partner_bank
+#: model:ir.model.fields,field_description:bank_accounts_report.field_account_payment_mode_res_partner_bank_ids
+#, python-format
+msgid "Bank Accounts"
+msgstr "Cuentas bancarias"
+
+#. module: bank_accounts_report
+#: model:ir.ui.view,arch_db:bank_accounts_report.account_payment_mode_form
+msgid "Bank Accounts on Reports"
+msgstr "Cuentas bancarias en informes"
+
+#. module: bank_accounts_report
+#: selection:account.payment.mode,account_source:0
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:11
+#, python-format
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bank_accounts_report
+#: model:ir.model,name:bank_accounts_report.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: bank_accounts_report
+#: selection:account.payment.mode,account_source:0
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:13
+#, python-format
+msgid "No"
+msgstr "No"
+
+#. module: bank_accounts_report
+#: selection:account.payment.mode,account_source:0
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:12
+#, python-format
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: bank_accounts_report
+#: model:ir.model,name:bank_accounts_report.model_account_payment_mode
+msgid "Payment Modes"
+msgstr "Modos de pago"
+
+#. module: bank_accounts_report
+#: model:ir.model,name:bank_accounts_report.model_sale_order
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:19
+#: model:ir.model.fields,field_description:bank_accounts_report.field_account_payment_mode_invoice_account
+#, python-format
+msgid "Use Invoice Account"
+msgstr "Usar cuenta de factura"
+
+#. module: bank_accounts_report
+#: code:addons/bank_accounts_report/models/account_payment_mode.py:20
+#: model:ir.model.fields,help:bank_accounts_report.field_account_payment_mode_invoice_account
+#, python-format
+msgid "Use the bank account set on the invoice"
+msgstr "Usar la cuenta bancaria especificada en la factura"
