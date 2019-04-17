@@ -38,6 +38,9 @@ class AccountInvoice(models.Model):
     @api.model
     def _prepare_refund(self, invoice, date_invoice=None, date=None,
                         description=None, journal_id=None):
-        values = super(AccountInvoice, self)._prepare_refund(invoice)
+        values = super(AccountInvoice, self)._prepare_refund(
+            invoice, date_invoice=date_invoice, date=date,
+            description=description, journal_id=journal_id,
+        )
         values['invoice_type'] = invoice.invoice_type
         return values
