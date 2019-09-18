@@ -164,6 +164,7 @@ class IndirectCostInvoices(models.Model):
                     ('partner_id', 'child_of', partner_id),
                     ('date', '>=', sel.date_from),
                     ('date', '<=', sel.date_to),
+                    ('type', '=', 'out_invoice'),
                     ('state', 'in', ['open', 'paid']),
                     ('company_id', '=', sel.company_id.id)
                 ])
