@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="view_order_form" model="ir.ui.view">
+		<field name="name">sale.order.form.custom</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//sheet//group[1]//group[1]//field[@name='partner_shipping_id']" position="attributes">
+				<attribute name="domain">['&amp;', ('parent_id', '=', partner_id), ('type', '=', 'delivery')]</attribute>
+				<!-- <attribute name="required">0</attribute> -->
+			</xpath>
+			<xpath expr="//sheet//group[1]//group[1]//field[@name='partner_shipping_id']" position="after">
+				<field name="partner_shipping_custom" attrs="{'readonly': True}"/>
+			</xpath>
+			<xpath expr="//field[@name='amount_untaxed']" position="before">
+				<field name="global_disc" attrs="{'readonly': [('state','!=', 'draft')]}"/>
+				<field name="global_disc_amount"/>
+			</xpath>
+			<xpath expr="//field[@name='order_line']//tree//field[@name='discount']" position="after">
+				<field name="global_disc" optional="show"/>
+			</xpath>
+		</field>
+	</record>
+
+	<template id="sale_order_portal_content" inherit_id="sale.sale_order_portal_content">
+
+		<xpath expr="//tr[@class='is-subtotal text-right']" position="before">
+			<tr class="text-right">
+				<td colspan="99">
+					<strong class="mr16">General Discount</strong>
+					<td>
+						<span t-field="sale_order.global_disc"/>
+						%
+					</td>
+				</td>
+			</tr>
+			<tr class="text-right">
+				<td colspan="99">
+					<strong class="mr16">General Dis. Amount</strong>
+					<td>
+						<span t-field="sale_order.global_disc_amount" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: sale_order.pricelist_id.currency_id}"/>
+					</td>
+				</td>
+			</tr>
+		</xpath>
+		<xpath expr="//tr[@style='border-bottom:1px solid #dddddd;'][1]" position="before">
+			<tr>
+				<td><span class="mr16">General Discount</span></td>
+				<td class="text-right">
+					<span t-field="sale_order.global_disc"/>
+					%
+				</td>
+			</tr>
+			<tr>
+				<td><span class="mr16">General Dis. Amount</span></td>
+				<td class="text-right">
+					<span t-field="sale_order.global_disc_amount" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: sale_order.pricelist_id.currency_id}"/>
+				</td>
+			</tr>
+		</xpath>
+	</template>
+
+</odoo>

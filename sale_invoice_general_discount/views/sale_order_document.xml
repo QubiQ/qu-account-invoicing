@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//td[@name='td_amount_untaxed_label']/.." position="before">
+            <tr t-if="doc.global_disc">
+                <td name="td_global_disc">General Discount</td>
+                <td class="text-right">
+                    <span t-field="doc.global_disc"/>
+                    %
+                </td>
+            </tr>
+            <tr t-if="doc.global_disc_amount">
+                <td name="td_global_disc_amount">General Dis. Amount</td>
+                <td class="text-right">
+                    <span t-field="doc.global_disc_amount" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+</odoo>

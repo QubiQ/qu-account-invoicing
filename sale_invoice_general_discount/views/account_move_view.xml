@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_account_move_form_custom" model="ir.ui.view">
+		<field name="name">account.move.form.custom</field>
+		<field name="model">account.move</field>
+		<field name="inherit_id" ref="account.view_move_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='amount_untaxed']" position="before">
+				<field name="global_disc" attrs="{'readonly': ['|', ('state','!=', 'draft'), ('invoice_origin', '!=', False)]}"/>
+				<field name="global_disc_amount"/>
+			</xpath>
+			<xpath expr="//field[@name='discount']" position="after">
+				<field name="global_disc" optional="hide"/>
+				<field name="global_disc_amount" optional="hide"/>
+			</xpath>
+		</field>
+	</record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <xpath expr="//tr[@class='border-black o_subtotal']" position="before">
+        <tr t-if="o.global_disc">
+            <td name="td_global_disc">General Discount</td>
+            <td class="text-right"><span t-field="o.global_disc"/> %</td>
+        </tr>
+        <tr t-if="o.global_disc_amount">
+            <td name="td_global_disc_amount">General Imp. Discount</td>
+            <td class="text-right"><span t-field="o.global_disc_amount"  t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/></td>
+        </tr>
+        </xpath>
+    </template>
+</odoo>
