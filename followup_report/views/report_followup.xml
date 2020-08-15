@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="line_template_followup_report_inovice_column_replace" inherit_id="account_reports.line_template">
+        <xpath expr="//a[@class='dropdown-toggle']" position="replace">
+            <a class="dropdown-toggle" data-toggle="dropdown" href='#'>
+                <span t-att-data-id="line['id']" t-att-class="domainClass" t-att-title="line.get('title_hover')">
+                    <span t-esc="line.get('invoice_number')"/>
+                </span>
+            </a>
+        </xpath>
+    </template>
+
+</odoo>
