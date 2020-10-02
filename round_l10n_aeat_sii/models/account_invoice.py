@@ -41,11 +41,12 @@ class AccountInvoice(models.Model):
 
     @api.multi
     def _get_sii_in_taxes(self):
-        desglose_factura, tax_amount =\
+        desglose_factura, tax_amount, not_in_amount_total =\
             super(AccountInvoice, self)._get_sii_in_taxes()
         desglose_factura = floats_round_iterable(desglose_factura)
         tax_amount = floats_round_iterable(tax_amount)
-        return desglose_factura, tax_amount
+        not_in_amount_total = floats_round_iterable(not_in_amount_total)
+        return desglose_factura, tax_amount, not_in_amount_total
 
     @api.multi
     def _get_sii_tax_dict(self, tax_line, sign):
