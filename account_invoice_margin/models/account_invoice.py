@@ -31,7 +31,7 @@ class AccountInvoiceLine(models.Model):
             quantity = sel.uom_id._compute_quantity(
                 sel.quantity, sel.product_id.uom_id)
             sel.standard_price_company_currency = \
-                sel._get_anglo_saxon_price_unit()*quantity
+                sel.product_id.standard_price*quantity
 
     @api.depends(
         'standard_price_company_currency', 'invoice_id.currency_id',
@@ -48,7 +48,7 @@ class AccountInvoiceLine(models.Model):
                             inv.company_currency_id)
                 l.margin = price - l.standard_price_company_currency
                 if price != 0:
-                    l.margin_rate = l.margin / price
+                    l.margin_rate = (l.margin / price) * 100
 
 
 class AccountInvoice(models.Model):
@@ -88,4 +88,4 @@ class AccountInvoice(models.Model):
             inv.margin_company_currency = margin_comp_cur
             inv.cost = cost
             if sale != 0:
-                inv.margin_rate = inv.margin_company_currency / sale
+                inv.margin_rate = (inv.margin_company_currency / sale) * 100
